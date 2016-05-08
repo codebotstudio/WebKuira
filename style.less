@@ -1,0 +1,292 @@
+@import "less/bootstrap.less";
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+@font-face{
+	font-family: "Orange Juice";
+	src: url(orange_juice.ttf) format('truetype');
+}
+
+
+@letracodebot: "Yanone Kaffeesatz";
+@primario: #EA9548;
+@azul: #4183D7;
+
+body{
+	font-size: 20px;
+	color: #333333;
+
+	p.texto{
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1.4em;
+		color: gray;
+	}
+	
+	h1.bloc{
+		font-family: 'Lato';
+		font-weight: 900;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+		background-color: @primario;
+		padding: 15px;
+	}
+
+	h1{
+		font-family: 'Lato';
+		font-weight: 900;
+		color: @primario;
+		text-align: center;
+		font-size: 3em;
+	}
+	h2{
+		font-family: 'Lato';
+		font-weight: 900;
+		font-size: 2em;
+		color: white;
+		text-shadow: 2px 2px 5px #333333;
+	}
+	h3{
+		font-family: 'Lato';
+		font-weight: 900;
+		color: @azul;
+	}
+//		ESTILOS CAROUSEL
+section.carrusel{
+
+
+	h1{
+		font-family: 'Lato';
+		font-weight: 900;
+		color: white;
+		text-align: center;
+		background-color: @primario;
+		padding: 15px;
+	}
+	h2{
+		font-family: 'Lato';
+		font-weight: 900;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+		text-shadow: 2px 2px 5px #333333;
+	}
+	h3{
+		font-family: 'Lato';
+		font-weight: 900;
+		color: @azul;
+		text-align: left;
+	}
+	.btn{
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	font-family: "Lato";
+	font-weight: 700;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1em;
+
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	}
+	.btn:hover{
+		background-color: white;
+		color: @gray;
+		padding-right: 2em;
+		padding-left: 2em;
+		border-radius: 0px;
+	}
+
+}
+}
+
+//		FOOTER
+section.foot{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #3A3A3A;
+	h3{
+		font-size: 1em;
+		font-family: 'Lato';
+		font-weight: 900;
+		color: @primario;
+	}
+	p{
+		font-size: 0.8em;
+		font-family: 'Lato';
+		font-weight: 400;
+		color: white;
+		line-height: 1em;
+	}
+}
+
+//		ESTILOS DE LA PAGINA EN CONSTRUCCION
+section.trabajando{
+	padding-top: 5em;
+	.fa{
+		font-size: 3em;
+		text-align: center;
+		color: #2B7C93;
+	}
+	h2{
+		font-family: "Ubuntu";
+		color: #262626;
+	}
+.first-animation{
+  -webkit-animation: appear 2s;
+  -moz-animation: appear 2s;
+  -o-animation: appear 2s;
+  -ms-animation: appear 2s;
+  animation: appear 2s;
+}
+@-webkit-keyframes appear{
+	0% {
+		-webkit-transform: translate(0,200px);
+		opacity: 0;}
+	50% {
+		-webkit-transform: translate(0,200px);
+		opacity: 0;}
+	100% {
+		-webkit-transform: translate(0,0px);
+		opacity: 1;}
+}
+
+.second-animation{
+  -webkit-animation: delayed 3.5s;
+  -moz-animation: delayed 3.5s;
+  -o-animation: delayed 3.5s;
+  -ms-animation: delayed 3.5s;
+  animation: delayed 3.5s;
+}
+@-webkit-keyframes delayed{
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 1;}
+}
+}
+
+//		ESTILOS DEL NAVBAR
+
+.navbar-header{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.navbar{
+	font-family: 'Lato';
+	font-weight: 400;
+}
+
+.undr {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.undr:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.undr:hover:after {
+	width: 100%;
+	background: @primario;
+}
+
+//		Inicio de sesión
+
+section.log-in{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+//		NOSOTROS
+section.nosotros{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	//background-color: #F89406;
+	h1{
+		font-size: 2em;
+		font-family: 'Lato';
+		font-weight: 400;
+		color: white;
+	}
+	h2{
+		font-size: 2em;
+		font-family: 'Lato';
+		font-weight: 400;
+		color: gray;
+		text-shadow: none;
+	}
+}
+	.oj{
+		font-family: "Orange Juice";
+		font-weight: 100;
+	}
+
+//		NUESTROS PRODUCTOS
+section.productos{
+	.btn{
+	background-color: transparent;
+	border: 2px solid @azul;
+	color: @azul;
+	font-family: "Lato";
+	font-weight: 700;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1em;
+
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	}
+	.btn:hover{
+		background-color: @azul;
+		color: white;
+		padding-right: 2em;
+		padding-left: 2em;
+		border-radius: 0px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 20px;	
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	body{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 991px){
+	body{
+		font-size: 16px;
+	.navbar-header{
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+	}
+}
+
+@media (max-width: 767px){
+	body{
+		font-size: 14px;
+	}
+}
